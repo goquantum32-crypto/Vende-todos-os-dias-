@@ -12,7 +12,6 @@ import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 import { StickyMobileCTA } from './components/StickyMobileCTA';
 import { ScriptPreviewModal } from './components/ScriptPreviewModal';
-import { SellerConfigModal } from './components/SellerConfigModal';
 import { LiveSalesNotifications } from './components/LiveSalesNotifications';
 
 // Generated official ebook cover image asset
@@ -21,7 +20,6 @@ import ebookCoverOfficial from './assets/images/ebook_cover_official_17865683284
 export default function App() {
   const [config, setConfig] = useState<PageConfig>(defaultConfig);
   const [isScriptModalOpen, setIsScriptModalOpen] = useState(false);
-  const [isSellerModalOpen, setIsSellerModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 selection:bg-amber-300 selection:text-slate-950">
@@ -58,10 +56,7 @@ export default function App() {
       <FAQSection config={config} />
 
       {/* FOOTER SECTION */}
-      <Footer
-        config={config}
-        onOpenSellerConfig={() => setIsSellerModalOpen(true)}
-      />
+      <Footer config={config} />
 
       {/* STICKY MOBILE BUY BUTTON */}
       <StickyMobileCTA config={config} />
@@ -74,14 +69,6 @@ export default function App() {
         isOpen={isScriptModalOpen}
         onClose={() => setIsScriptModalOpen(false)}
         config={config}
-      />
-
-      {/* SELLER CONFIGURATION & HTML DOWNLOAD MODAL */}
-      <SellerConfigModal
-        isOpen={isSellerModalOpen}
-        onClose={() => setIsSellerModalOpen(false)}
-        config={config}
-        onSaveConfig={(newConfig) => setConfig(newConfig)}
       />
 
     </div>

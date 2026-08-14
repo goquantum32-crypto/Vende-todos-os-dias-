@@ -4,6 +4,7 @@ import { coverBase64 } from '../assets/images/coverBase64';
 
 export function generateSingleFileHtml(config: PageConfig): string {
   const formatPrice = (p: number) => `${p.toLocaleString('pt-MZ')} MT`;
+  const discountPercent = Math.round(((config.originalPriceMT - config.priceMT) / config.originalPriceMT) * 100);
 
   return `<!DOCTYPE html>
 <html lang="pt-MZ" class="scroll-smooth">
@@ -57,7 +58,7 @@ export function generateSingleFileHtml(config: PageConfig): string {
   <!-- TOP ANNOUNCEMENT BANNER -->
   <div class="bg-gradient-to-r from-amber-600 via-brand-gold to-amber-700 text-white text-center py-2.5 px-4 text-xs md:text-sm font-semibold tracking-wide shadow-md flex items-center justify-center gap-2">
     <span class="inline-block w-2 h-2 rounded-full bg-emerald-300 animate-ping"></span>
-    <span>OFERTA ESPECIAL PARA MOÇAMBIQUE — DESCONTO EXCLUSIVO DE HOJE DE 75%</span>
+    <span>OFERTA ESPECIAL PARA MOÇAMBIQUE — DESCONTO EXCLUSIVO DE HOJE DE ${discountPercent}%</span>
   </div>
 
   <!-- HEADER & HERO SECTION -->

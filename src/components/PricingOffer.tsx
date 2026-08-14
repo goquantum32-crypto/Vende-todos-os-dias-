@@ -9,6 +9,7 @@ interface PricingOfferProps {
 
 export const PricingOffer: React.FC<PricingOfferProps> = ({ config }) => {
   const formatPrice = (price: number) => `${price.toLocaleString('pt-MZ')} MT`;
+  const discountPercent = Math.round(((config.originalPriceMT - config.priceMT) / config.originalPriceMT) * 100);
 
   return (
     <section id="comprar" className="py-16 px-4 bg-slate-100/90 relative">
@@ -33,7 +34,7 @@ export const PricingOffer: React.FC<PricingOfferProps> = ({ config }) => {
           
           {/* TOP RIBBON */}
           <div className="absolute top-0 right-0 bg-[#B8860B] text-slate-950 font-black text-[11px] px-5 py-1.5 rounded-bl-2xl uppercase tracking-wider shadow-md">
-            Desconto de 75% Ativo
+            Desconto de {discountPercent}% Ativo
           </div>
 
           {/* BONUSES LIST BOX */}

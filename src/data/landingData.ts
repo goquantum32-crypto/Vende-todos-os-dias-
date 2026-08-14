@@ -4,8 +4,8 @@ export const defaultConfig: PageConfig = {
   productName: "Vende Todos os Dias",
   tagline: "O Guia Completo de Vendas pelo WhatsApp e Redes Sociais (Edição Completa)",
   priceMT: 250,
-  originalPriceMT: 1000,
-  paymentUrl: "https://escalepay.com/checkout/vende-todos-os-dias",
+  originalPriceMT: 500,
+  paymentUrl: "https://checkout.escalepay.com/3177120",
   whatsappNumber: "258840000000",
   whatsappSupportMsg: "Olá! Tenho dúvidas sobre o Ebook Vende Todos os Dias (Edição Completa).",
   sellerName: "Digital Vendas Moçambique"

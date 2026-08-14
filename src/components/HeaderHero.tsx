@@ -27,13 +27,14 @@ export const HeaderHero: React.FC<HeaderHeroProps> = ({ config, onOpenScriptPrev
   }, []);
 
   const formatPrice = (price: number) => `${price.toLocaleString('pt-MZ')} MT`;
+  const discountPercent = Math.round(((config.originalPriceMT - config.priceMT) / config.originalPriceMT) * 100);
 
   return (
     <div className="relative">
       {/* TOP URGENCY ANNOUNCEMENT */}
       <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 text-slate-950 text-center py-2 px-4 text-xs md:text-sm font-extrabold tracking-wide flex items-center justify-center gap-2 shadow-inner">
         <span className="w-2 h-2 rounded-full bg-emerald-900 animate-ping"></span>
-        <span>OFERTA LIMITADA PARA MOÇAMBIQUE: 75% DE DESCONTO ENCERRA EM</span>
+        <span>OFERTA LIMITADA PARA MOÇAMBIQUE: {discountPercent}% DE DESCONTO ENCERRA EM</span>
         <span className="inline-flex items-center gap-1 bg-slate-950 text-amber-300 px-2 py-0.5 rounded font-mono text-xs border border-amber-400/40">
           <Clock className="w-3.5 h-3.5" />
           {String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}

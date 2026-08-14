@@ -324,5 +324,15 @@ export const recentSales: LiveSaleItem[] = [
   { name: "Nelson M.", city: "Maputo", timeAgo: "há 2 minutos" },
   { name: "Marta S.", city: "Matola", timeAgo: "há 5 minutos" },
   { name: "Joaquim B.", city: "Beira", timeAgo: "há 12 minutos" },
-  { name: "Celeste F.", city: "Nampula", timeAgo: "há 18 minutos" }
+  { name: "Celeste F.", city: "Nampula", timeAgo: "há 18 minutos" },
+  { name: "Elias T.", city: "Chimoio", timeAgo: "há 21 minutos" },
+  { name: "Sandra P.", city: "Quelimane", timeAgo: "há 28 minutos" },
+  { name: "Filipe C.", city: "Tete", timeAgo: "há 34 minutos" },
+  { name: "Amélia D.", city: "Maputo", timeAgo: "há 42 minutos" },
+  { name: "João N.", city: "Pemba", timeAgo: "há 47 minutos" },
+  { name: "Rita A.", city: "Xai-Xai", timeAgo: "há 55 minutos" },
+  { name: "Carlos V.", city: "Matola", timeAgo: "há 1 hora" },
+  { name: "Inês M.", city: "Lichinga", timeAgo: "há 1 hora" },
+  { name: "Hélder J.", city: "Inhambane", timeAgo: "há 2 horas" },
+  { name: "Glória R.", city: "Beira", timeAgo: "há 2 horas" }
 ];

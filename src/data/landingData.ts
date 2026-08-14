@@ -245,30 +245,30 @@ export const testimonials: TestimonialItem[] = [
 export const bonuses: BonusItem[] = [
   {
     id: "bon-1",
-    title: "Scripts Prontos para Copiar e Colar (Mais de 25 Situações)",
+    title: "Calendário de Conteúdo de 30 Dias",
     valValueMT: 450,
-    description: "Mensagens prontas para abordagem, resposta a 'quanto custa?', acompanhamento (follow-up) e fecho de venda.",
+    description: "Ideias práticas para Facebook, Instagram e Estados do WhatsApp.",
     badge: "BÓNUS #1"
   },
   {
     id: "bon-2",
-    title: "Checklist do Mentor Antes de Lançar Anúncios Pagos",
+    title: "Pack de Scripts de Venda",
     valValueMT: 350,
-    description: "Lista de verificação passo a passo para garantires que a tua campanha no Facebook/Instagram Ads não vai queimar dinheiro.",
+    description: "Mensagens prontas para responder, apresentar preço, lidar com objecções e fazer follow-up.",
     badge: "BÓNUS #2"
   },
   {
     id: "bon-3",
-    title: "Calendário Prático de 30 Dias para WhatsApp Status e Redes",
+    title: "Checklist do WhatsApp Business",
     valValueMT: 400,
-    description: "Roteiro exato de postagens diárias de Segunda a Domingo para manteres os teus clientes motivados a comprar.",
+    description: "Lista para configurar perfil, catálogo, respostas rápidas, etiquetas e Estados.",
     badge: "BÓNUS #3"
   },
   {
     id: "bon-4",
-    title: "Guia Rápido de Cobranças Seguras com M-Pesa, e-Mola e EscalePay",
+    title: "Folha de Acompanhamento de Vendas",
     valValueMT: 200,
-    description: "Como receber pagamentos móveis em Moçambique com segurança total e sem complicações.",
+    description: "Ficheiro Excel para registar contactos, conversas, follow-ups, pagamentos e resultados.",
     badge: "BÓNUS #4"
   }
 ];

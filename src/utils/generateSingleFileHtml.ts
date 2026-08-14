@@ -10,8 +10,8 @@ export function generateSingleFileHtml(config: PageConfig): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${config.productName} — ${config.tagline}</title>
-  <meta name="description" content="Aprende a vender todos os dias pelo WhatsApp e Redes Sociais em Moçambique sem gastar dinheiro em anúncios. Ebook prático com scripts prontos.">
+  <title>${config.productName}</title>
+  <meta name="description" content="O Guia Completo de Vendas pelo WhatsApp e Redes Sociais. Aprende a vender todos os dias em Moçambique sem gastar dinheiro em anúncios. Ebook prático com scripts prontos.">
   
   <!-- Tailwind CSS via CDN for standalone fast rendering -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -292,7 +292,6 @@ export function generateSingleFileHtml(config: PageConfig): string {
             
             <div class="pt-4 border-t border-emerald-800/80 flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <img src="${t.avatar}" alt="${t.name}" class="w-10 h-10 rounded-full object-cover border border-amber-400" />
                 <div>
                   <h4 class="font-bold text-sm text-white">${t.name}</h4>
                   <p class="text-[11px] text-emerald-300">${t.role} • ${t.location}</p>

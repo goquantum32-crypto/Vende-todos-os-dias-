@@ -46,12 +46,6 @@ export const SocialProof: React.FC = () => {
               <div className="pt-4 border-t border-emerald-800/80 space-y-2">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <img
-                      src={test.avatar}
-                      alt={test.name}
-                      className="w-10 h-10 rounded-full object-cover border-2 border-amber-400/80 shadow-md"
-                      referrerPolicy="no-referrer"
-                    />
                     <div>
                       <h4 className="font-bold text-sm text-white flex items-center gap-1">
                         <span>{test.name}</span>
